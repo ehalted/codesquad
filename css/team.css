@@ -1,0 +1,256 @@
+*{margin:0;padding:0;}
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+
+
+body{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    width:100%;
+    height: auto;
+}
+.wrappertwo{
+    width:100%;
+    height: auto;
+    float:left;
+}
+/* navigation start from here */
+.nav {
+    text-align: right;
+    height: 40px;
+    background:#17202A;
+}
+.nav p{
+    float:left;
+    padding-left: 10px;
+    padding-top: 7px;
+    color:white;
+
+}
+.menu {
+    margin: 0 30px 0 0;
+    padding-top: 6px;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+.menu a:hover{
+    color:#95A5A6;
+    transition: 1s;
+}
+
+label {
+    margin-right:4px;
+    font-size: 26px;
+    display: none;
+    width: 26px;
+    float: right;
+    color:white;
+}
+#toggle {
+    display: none;
+}
+/* headcont start from here */
+.headcont{
+    width:100%;
+    height: auto;
+    background:grey;
+    float: left;
+    background:url(img/head.jpg);
+}
+.headcontext{
+    width:75%;
+    height:auto;
+    margin: 0 auto;
+}.headcontext p{
+    color:#fff;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+.headcontext h1{
+    color: #fff;
+    float: left;
+    display:block;
+    clear:left;
+    padding-top: 25px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.headcontext button{
+    float:left;
+    margin-top:20px;
+    margin-bottom: 100px;
+    padding:6px;
+    background:#1C2833;
+    border:none;
+}
+.followus{
+    float:left;
+    clear:left;
+    margin-top: 20px;
+    margin-bottom:100px;
+}
+.followus a{
+    text-decoration: none;
+    color:white;
+    background:#17202A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-bottom:3px solid #95A5A6;
+}
+.followus a:hover{
+    color:#95A5A6;
+    transition: 1s;
+}
+.line{
+    width:50px;
+    height: 3px;
+    float:left;
+    margin-top: 20px;
+    background:#95A5A6;
+}
+/* wrapper3 start from here*/
+.wrapper3{
+    width:100%;
+    height:400px;
+    margin-bottom: 10px;
+    float: left;
+}
+.card{
+    float:left;
+    background:#000;
+    border-radius: 15px;
+    position: absolute;
+    background:#17202A;
+}
+.cardimg{
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 2;
+    margin-right: 7.9px;
+    margin-left: 7px;
+}
+.cardimg img{
+    transition:0.5s;
+    width:300px;
+    height: 400px;
+}
+.card:hover .cardimg img{
+    opacity: 0.5;
+}
+.social-icon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+    margin:0;
+    padding:0;
+}
+.social-icon li{
+    list-style: none;
+}
+.social-icon li a{
+    position: relative;
+    display: block;
+    width:50px;
+    line-height: 50px;
+    text-align: center;
+    background:#17202A;
+    margin:0 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateY(200px);
+    opacity:0;
+}
+.card:hover .social-icon li a{
+    transform: translateY(0px);
+    opacity:1;
+}
+.card. .social-icon li a .fa{
+    transition: 0.5s;
+    font-size: 24px;
+    line-height: 50px;
+}
+.card:hover .social-icon li:nth-child(1) a{
+    transition-delay: 0s;
+}
+.card:hover .social-icon li:nth-child(2) a{
+    transition-delay: 0.2s;
+}
+.card:hover .social-icon li:nth-child(3) a{
+    transition-delay: 0.4s;
+}
+.card:hover .social-icon li:nth-child(4) a{
+    transition-delay: 0.6s;
+}
+.card:hover .social-icon li:nth-child(5) a{
+    transition-delay: 0.8s;
+}
+.text p{
+    text-align: center;
+    font-size: 17px;
+    color:#17202A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*nav responsive*/
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background:#17202A;
+        transition: 1s;
+        float: left;
+    }
+    .menu a {
+        display: block;
+        padding-top: 10px;
+        padding-bottom:10px;
+        margin: 0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
+}
+/* end of nav responsive */

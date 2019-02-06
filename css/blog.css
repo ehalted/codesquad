@@ -1,0 +1,195 @@
+*{margin:0;padding:0;}
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.maateen.me/mukti/font.css');
+@import url('https://fonts.maateen.me/charukola-ultra-light/font.css');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    width:100%;
+    height: auto;
+}
+.wrappertwo{
+    width:100%;
+    height: auto;
+    float:left;
+}
+/* navigation start from here */
+.nav {
+    text-align: right;
+    height: 40px;
+    background:#17202A;
+}
+.nav p{
+    float:left;
+    padding-left: 10px;
+    padding-top: 7px;
+    color:white;
+
+}
+.menu {
+    margin: 0 30px 0 0;
+    padding-top: 6px;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+.menu a:hover{
+    color:#95A5A6;
+    transition: 1s;
+}
+
+label {
+    margin-right:4px;
+    font-size: 26px;
+    display: none;
+    width: 26px;
+    float: right;
+    color:white;
+}
+#toggle {
+    display: none;
+}
+
+/* main css */
+
+
+.profile{
+    width:100%;
+    height: auto;
+    float: left;
+}
+.profile img{
+    float: left;
+    border-radius: 50%;
+    width:50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.profile p{
+    float: left;
+    padding-top: 25px;
+    padding-left: 7px;
+    
+}
+.blogcont{
+    width:97%;
+    height: 400px;
+    margin: 0 auto;
+}
+.cont{
+    float: left;
+    clear: left;
+}
+.cont h1{
+    color:#1A5276;
+    font-size: 30px;
+    font-family:'Mukti', sans-serif;
+    float: left;
+}
+.cont p{
+    float: left;
+    clear: left;
+    text-align: justify;
+    font-family: 'Mukti', sans-serif;
+    transition: 1s;
+    padding-top: 20px;
+}
+.cont img{
+    width:100%;
+    height: auto;
+}
+.link{
+    float: left;
+    clear: left;
+    margin-top: 15px;
+}
+.link a{
+    color:tomato;
+    transition:1s;
+}
+.link a:hover{
+    color:#17202A;
+}
+.blank{
+    width:100%;
+    height: 70px;
+    float: left;
+}
+
+/* top button */
+.wraptop{
+    width:97%;
+    height: auto;
+    margin: 0 auto;
+}
+.gotop{
+    float: left;
+    width:100%;
+    height: 50px;
+}
+.gotop a{
+    color:rgb(240, 236, 235);
+    background:#117A65;
+    padding:7px;
+}
+  
+  
+  
+  
+  
+  /* 'CharukolaUltraLight', sans-serif;     */
+  
+  /*   'Mukti', sans-serif;     */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*nav responsive*/
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background:#17202A;
+        transition: 1s;
+        float: left;
+    }
+    .menu a {
+        display: block;
+        padding-top: 10px;
+        padding-bottom:10px;
+        margin: 0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
+}
+/* end of nav responsive */

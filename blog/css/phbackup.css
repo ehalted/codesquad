@@ -1,0 +1,73 @@
+/* navigation start from here */
+/* navigation start from here */
+.nav {
+    text-align: right;
+    height: 40px;
+    background:#17202A;
+}
+.nav p{
+    float:left;
+    padding-left: 10px;
+    padding-top: 7px;
+    color:white;
+
+}
+.menu {
+    margin: 0 30px 0 0;
+    padding-top: 6px;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+.menu a:hover{
+    color:#95A5A6;
+    transition: 1s;
+}
+
+label {
+    margin-right:4px;
+    font-size: 26px;
+    display: none;
+    width: 26px;
+    float: right;
+    color:white;
+}
+#toggle {
+    display: none;
+}
+.nav p{
+    padding-bottom:20px;
+}
+
+
+
+/*nav responsive*/
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background:#17202A;
+        transition: 1s;
+        float: left;
+    }
+    .menu a {
+        display: block;
+        padding-top: 10px;
+        padding-bottom:10px;
+        margin: 0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
+}
+/* end of nav responsive */
