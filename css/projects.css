@@ -77,6 +77,16 @@ label {
     color:tomato;
 }
 
+.teampro h4{
+    text-transform: uppercase;
+    font-size: 27px;
+
+}
+.teampro a{
+    color:#32295e;
+    font-size: 15px;
+}
+
 
 
 
